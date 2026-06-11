@@ -1,0 +1,9 @@
+# Examples demonstrating library usage
+
+add_executable(ring_buffer_example ring_buffer_example.c)
+target_link_libraries(ring_buffer_example PRIVATE robotics::data_structures)
+apply_common_settings(ring_buffer_example)
+
+add_executable(json_parser_example json_parser_example.c)
+target_link_libraries(json_parser_example PRIVATE robotics::json_parser)
+apply_common_settings(json_parser_example)
